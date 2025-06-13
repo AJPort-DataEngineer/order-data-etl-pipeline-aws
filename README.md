@@ -1,6 +1,6 @@
 ## 👤 About Me
 
-Aspiring Data Engineer with hands-on experience building cloud-native data pipelines using AWS services. Passionate about transforming raw data into insights with tools like Python, Glue, Lambda, Athena, and QuickSight.
+Aspiring Data Engineer with hands-on experience building cloud-native data pipelines using AWS services. Passionate about transforming raw data into insights.
 
 📍 Based in Dallas, TX  
 🎓 B.S. in Cybersecurity / Information Assurance  
