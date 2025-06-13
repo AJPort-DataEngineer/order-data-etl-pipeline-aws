@@ -8,7 +8,6 @@ Aspiring Data Engineer with hands-on experience building cloud-native data pipel
 🔗 LinkedIn: www.linkedin.com/in/ajahne-austin-90576715a 
 📧 Contact: austinaj9@gmail.com
 
-order-data-etl-pipeline-aws
 End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambda, and QuickSight
 # AWS Data Engineering Portfolio Project
 
