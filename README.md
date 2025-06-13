@@ -4,10 +4,9 @@ Aspiring Data Engineer with hands-on experience building cloud-native data pipel
 
 📍 Based in Dallas, TX  
 🎓 B.S. in Cybersecurity / Information Assurance  
-💼 Open to data engineering, cloud, or analytics roles  
-🌐 Portfolio: [Insert Portfolio URL]  
-🔗 LinkedIn: [Insert LinkedIn URL]  
-📧 Contact: [Insert Email Address]
+💼 Open to data engineering, cloud, or analytics roles   
+🔗 LinkedIn: www.linkedin.com/in/ajahne-austin-90576715a 
+📧 Contact: austinaj9@gmail.com
 
 order-data-etl-pipeline-aws
 End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambda, and QuickSight
