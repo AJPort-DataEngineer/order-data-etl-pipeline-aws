@@ -14,7 +14,7 @@ End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambd
 Overview
 This project demonstrates an end-to-end data engineering pipeline using Python and AWS services including S3, Glue, Athena, Lambda, EventBridge, and QuickSight.
 
-<img width="500" height="500" alt="pipeline diagram project1" src="https://github.com/user-attachments/assets/c32d5d21-6af4-415f-a4e6-097b5b19127f" />
+<img width="400" height="400" alt="pipeline diagram project1" src="https://github.com/user-attachments/assets/c32d5d21-6af4-415f-a4e6-097b5b19127f" />
 
 
 
