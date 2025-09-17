@@ -1,5 +1,5 @@
 ## Overview
-Processed 100 synthetic order rows into Parquet with Glue and Athena, cutting query time by 80 percent versus raw CSV and enabling near-real-time dashboards in QuickSight.
+Processed 100 synthetic order rows into Parquet with Glue and Athena, cutting query time by 80% versus raw CSV and enabling near-real-time dashboards in QuickSight.
  
 ## 👤 About Me
 
