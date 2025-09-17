@@ -68,19 +68,22 @@ Sample Rows:
 🧑‍💻 Example Athena Queries
 
 1. Top 5 Product Categories by Revenue
+
    SELECT product_category, SUM(quantity * price) AS revenue
    FROM orders_table
    GROUP BY product_category
    ORDER BY revenue DESC
    LIMIT 5;
 
-2. Monthly order volume trend
+3. Monthly order volume trend
+
    SELECT DATE_TRUNC('month', order_date) AS month, COUNT(*) AS total_orders
    FROM orders_table
    GROUP BY month
    ORDER BY month;
  
-3. Average order value by customer
+5. Average order value by customer
+
    SELECT customer_name, AVG(quantity * price) AS avg_order_value
    FROM orders_table
    GROUP BY customer_name
@@ -89,23 +92,23 @@ Sample Rows:
 
 💾 Partitioning & File Format
 
--Converted CSV to Parquet for compression + query efficiency.
+   -Converted CSV to Parquet for compression + query efficiency.
 
--Partitioned by order_date (year/month) for time-based filtering.
+   -Partitioned by order_date (year/month) for time-based filtering.
 
--Result: Queries run 3–5x faster, with lower Athena costs.
+   -Result: Queries run 3–5x faster, with lower Athena costs.
 
 💰 Cost & Limits
 
--Estimated Monthly Cost (small scale):
+   -Estimated Monthly Cost (small scale):
 
-   S3: <$1 for GBs of data
+      S3: <$1 for GBs of data
 
-   Glue Crawler + ETL: $2–5
+      Glue Crawler + ETL: $2–5
 
-   Athena: ~$1 per 1TB scanned (Parquet minimizes this)
+      Athena: ~$1 per 1TB scanned (Parquet minimizes this)
 
-   QuickSight: $9/user/month
+      QuickSight: $9/user/month
 
 -Service Limits:
 
