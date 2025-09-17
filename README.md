@@ -120,6 +120,15 @@ Sample Rows:
 
 📈 Dashboards
 
+   Revenue by Category – validates product distribution
+
+   Monthly Order Volume – shows seasonality trend
+
+   Top Customers by Spend – business insight into customer value
+
+
+<img width="2000" height="2009" alt="image" src="https://github.com/user-attachments/assets/c063dc12-d4a7-4c55-95e5-9c7e8f554fe8" />
+
 
 
 Project Steps
