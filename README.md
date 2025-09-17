@@ -16,6 +16,7 @@ This project demonstrates an end-to-end data engineering pipeline using Python a
 
 <img width="400" height="400" alt="pipeline diagram project1" src="https://github.com/user-attachments/assets/c32d5d21-6af4-415f-a4e6-097b5b19127f" />
 
+
 ⚡ Setup
 
    1. Prerequisites
@@ -47,6 +48,7 @@ This project demonstrates an end-to-end data engineering pipeline using Python a
      "table_name": "orders_table"
    }
 
+
 📊 Schema and Sample data
 
 Schema:
@@ -64,6 +66,7 @@ Sample Rows:
 | --------- | -------------- | ----------------- | -------- | ------ | ----------- |
 | 1a2b...   | Ryan Yang      | Gaming Laptop     | 4        | 424.59 | 2023-09-01  |
 | 2b3c...   | Sarah Lee      | Smartphone        | 1        | 799.99 | 2023-09-02  |
+
 
 🧑‍💻 Example Athena Queries
 
@@ -90,6 +93,7 @@ Sample Rows:
    ORDER BY avg_order_value DESC
    LIMIT 10;
 
+
 💾 Partitioning & File Format
 
    -Converted CSV to Parquet for compression + query efficiency.
@@ -97,6 +101,7 @@ Sample Rows:
    -Partitioned by order_date (year/month) for time-based filtering.
 
    -Result: Queries run 3–5x faster, with lower Athena costs.
+
 
 💰 Cost & Limits
 
@@ -117,6 +122,7 @@ Sample Rows:
    Glue job max DPU = 100 (default 10)
 
    S3 request limits = practically unlimited for this scale
+
 
 
 📈 Dashboards
