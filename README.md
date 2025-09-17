@@ -18,25 +18,25 @@ This project demonstrates an end-to-end data engineering pipeline using Python a
 
 ⚡ Setup
 
-1. Prerequisites
+   1. Prerequisites
 
--AWS Account with permissions for S3, Glue, Athena, IAM, and EventBridge
+      -AWS Account with permissions for S3, Glue, Athena, IAM, and EventBridge
 
--IAM User/Role with these policies:
+      -IAM User/Role with these policies:
 
-   AmazonS3FullAccess
+         AmazonS3FullAccess
 
-   AWSGlueServiceRole
+         AWSGlueServiceRole
 
-   AmazonAthenaFullAccess
+         AmazonAthenaFullAccess
 
-   CloudWatchLogsFullAccess
+         CloudWatchLogsFullAccess
 
--Local Environment
+      -Local Environment
 
-   Python 3.9+
+         Python 3.9+
 
-   Install dependencies: pip install -r requirements.txt
+         Install dependencies: pip install -r requirements.txt
 
 2. Configuration
    Copy to json file: 
