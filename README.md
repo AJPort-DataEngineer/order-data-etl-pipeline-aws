@@ -50,7 +50,7 @@ End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambd
    }
 
 
-📊 Schema and Sample data
+## 📊 Schema and Sample data
 
 Schema:
 | Column           | Type      | Example                   |
@@ -69,7 +69,7 @@ Sample Rows:
 | 2b3c...   | Sarah Lee      | Smartphone        | 1        | 799.99 | 2023-09-02  |
 
 
-🧑‍💻 Example Athena Queries
+## 🧑‍💻 Example Athena Queries
 
 1. Top 5 Product Categories by Revenue
 
@@ -95,7 +95,7 @@ Sample Rows:
    LIMIT 10;
 
 
-💾 Partitioning & File Format
+## 💾 Partitioning & File Format
 
    -Converted CSV to Parquet for compression + query efficiency.
 
@@ -104,7 +104,7 @@ Sample Rows:
    -Result: Queries run 3–5x faster, with lower Athena costs.
 
 
-💰 Cost & Limits
+## 💰 Cost & Limits
 
    -Estimated Monthly Cost (small scale):
 
@@ -126,7 +126,7 @@ Sample Rows:
 
 
 
-📈 Dashboards
+## 📈 Dashboards
 
    Revenue by Order Status – validates product distribution
 
@@ -139,7 +139,7 @@ Sample Rows:
 
 
 
-Project Steps
+## Project Steps
 1. Data Generation  
    Synthetic order data generated with Python using Faker and saved as CSV.
 
