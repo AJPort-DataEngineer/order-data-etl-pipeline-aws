@@ -16,6 +16,107 @@ This project demonstrates an end-to-end data engineering pipeline using Python a
 
 <img width="400" height="400" alt="pipeline diagram project1" src="https://github.com/user-attachments/assets/c32d5d21-6af4-415f-a4e6-097b5b19127f" />
 
+⚡ Setup
+
+1. Prerequisites
+
+-AWS Account with permissions for S3, Glue, Athena, IAM, and EventBridge
+
+-IAM User/Role with these policies:
+
+   AmazonS3FullAccess
+
+   AWSGlueServiceRole
+
+   AmazonAthenaFullAccess
+
+   CloudWatchLogsFullAccess
+
+-Local Environment
+
+   Python 3.9+
+
+   Install dependencies: pip install -r requirements.txt
+
+2. Configuration
+   Copy to json file: 
+    {
+     "aws_region": "us-east-1",
+     "s3_bucket": "my-batchstream-orders",
+     "database_name": "orders_db",
+     "table_name": "orders_table"
+   }
+
+📊 Schema and Sample data
+
+Schema:
+| Column           | Type      | Example                   |
+| -----------------| --------- | ------------------------- |
+| order_id         | STRING    | `72b25b4d-348b-4fc0-8deb` |
+| customer_name    | STRING    | `Ryan Yang`               |
+| product_category | STRING    | `Gaming Laptop`           |
+| quantity         | INT       | `4`                       |
+| price            | DOUBLE    | `424.59`                  |
+| order_date       | TIMESTAMP | `2023-09-01 12:34:56`     |
+
+Sample Rows:
+| order_id  | customer_name  | product_category  | quantity | price  | order_date  |
+| --------- | -------------- | ----------------- | -------- | ------ | ----------- |
+| 1a2b...   | Ryan Yang      | Gaming Laptop     | 4        | 424.59 | 2023-09-01  |
+| 2b3c...   | Sarah Lee      | Smartphone        | 1        | 799.99 | 2023-09-02  |
+
+🧑‍💻 Example Athena Queries
+
+1. Top 5 Product Categories by Revenue
+   SELECT product_category, SUM(quantity * price) AS revenue
+   FROM orders_table
+   GROUP BY product_category
+   ORDER BY revenue DESC
+   LIMIT 5;
+
+2. Monthly order volume trend
+   SELECT DATE_TRUNC('month', order_date) AS month, COUNT(*) AS total_orders
+   FROM orders_table
+   GROUP BY month
+   ORDER BY month;
+ 
+3. Average order value by customer
+   SELECT customer_name, AVG(quantity * price) AS avg_order_value
+   FROM orders_table
+   GROUP BY customer_name
+   ORDER BY avg_order_value DESC
+   LIMIT 10;
+
+💾 Partitioning & File Format
+
+-Converted CSV to Parquet for compression + query efficiency.
+
+-Partitioned by order_date (year/month) for time-based filtering.
+
+-Result: Queries run 3–5x faster, with lower Athena costs.
+
+💰 Cost & Limits
+
+-Estimated Monthly Cost (small scale):
+
+   S3: <$1 for GBs of data
+
+   Glue Crawler + ETL: $2–5
+
+   Athena: ~$1 per 1TB scanned (Parquet minimizes this)
+
+   QuickSight: $9/user/month
+
+-Service Limits:
+
+   Athena query timeout = 30 minutes
+
+   Glue job max DPU = 100 (default 10)
+
+   S3 request limits = practically unlimited for this scale
+
+📈 Dashboards
+
 
 
 Project Steps
