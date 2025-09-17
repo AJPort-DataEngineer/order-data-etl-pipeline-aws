@@ -18,7 +18,7 @@ End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambd
 
 
 
-#⚡ Setup
+##⚡ Setup
 
    1. Prerequisites
 
