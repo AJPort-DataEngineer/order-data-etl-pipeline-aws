@@ -118,9 +118,10 @@ Sample Rows:
 
    S3 request limits = practically unlimited for this scale
 
+
 📈 Dashboards
 
-   Revenue by Category – validates product distribution
+   Revenue by Order Status – validates product distribution
 
    Monthly Order Volume – shows seasonality trend
 
