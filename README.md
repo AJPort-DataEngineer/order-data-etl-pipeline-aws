@@ -123,7 +123,7 @@ Sample Rows:
 
    Revenue by Order Status – validates product distribution
 
-   Monthly Order Volume – shows seasonality trend
+   Daily Order Volume – shows daily trend
 
    Top Customers by Spend – business insight into customer value
 
