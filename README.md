@@ -14,7 +14,8 @@ Data Engineer with hands-on experience building cloud-native data pipelines usin
 End-to-end serverless data pipeline on AWS using Python, S3, Glue, Athena, Lambda, and QuickSight
 # AWS Data Engineering Portfolio Project
 
-<img width="400" height="400" alt="pipeline diagram project1" src="https://github.com/user-attachments/assets/c32d5d21-6af4-415f-a4e6-097b5b19127f" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/25558635-313c-4a48-98ce-f24c72837e8c" />
+
 
 
 ⚡ Setup
