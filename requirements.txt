@@ -1,3 +1,5 @@
 faker
 boto3
 pandas
+pyarrow
+s3fs
