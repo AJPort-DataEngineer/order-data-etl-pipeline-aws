@@ -1,0 +1,6 @@
+{
+  "aws_region": "us-east-1",
+  "s3_bucket": "my-batchstream-orders",
+  "database_name": "orders_db",
+  "table_name": "orders_table"
+}
