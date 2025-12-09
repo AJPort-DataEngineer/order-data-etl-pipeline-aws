@@ -1,5 +1,5 @@
 ## Overview
-Processed 1000 order rows of warehouse sales into Parquet with Glue and Athena, cutting query time by 80% versus raw CSV and enabling near-real-time dashboards in QuickSight.
+Processed 1000 order rows of warehouse sales into Parquet with Glue and Athena, cutting query time by 80% versus raw CSV and enabling near-real-time dashboards in Tableau.
  
 ## 👤 About Me
 
